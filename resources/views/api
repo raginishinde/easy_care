@@ -1,0 +1,79 @@
+1) Continue with mobile number:-
+Url:localhost/easycare/api/continue_mobile
+Parameters:-{
+"country_code":"74",
+"contact":"4545454"
+}
+Response:-
+{
+    "status": true,
+    "message": "OTP send successfully",
+    "code": 200,
+    "data": {}
+}
+
+2) Verify Otp:-
+Url:-localhost/easycare/api/verify_otp
+Parameters:-
+{
+"contact":"4545454",
+"otp":"782980",
+"country_code":"91"
+}
+Response:-
+{
+    "status": true,
+    "message": "OTP verified successfully",
+    "code": 200,
+    "data": {}
+}
+
+3) Register:-
+Url:-localhost/easycare/api/register
+Parameters:-
+{
+    "name": "ghfghg",
+    "email": "",
+    "social_id": "",
+    "contact": "45455454",
+    "country_code": "91",
+    "user_type": 1,
+    "terms": 1,
+    "device_id": "762566",
+    "device_type": "Android",
+    "user_image": "",
+    "player_id": "45455"
+}
+Response:-
+{
+    "status": true,
+    "message": "User register successfully!",
+    "code": 200,
+    "data": {
+        "id": 2,
+        "name": "ghfghg",
+        "email": null,
+        "contact": "45455454",
+        "country_code": 91,
+        "user_type": 1,
+        "terms": 1,
+        "user_image": null
+    }
+}
+
+4) Get Countries:-
+Url:-localhost/easycare/api/country_data
+Response:-
+{
+    "status": true,
+    "message": "Countries fetch successfully!",
+    "code": 200,
+    "data": [
+        {
+            "id": 1,
+            "name": "Afghanistan",
+            "iso2": "AF",
+            "phonecode": "93"
+        },   
+    ]
+}
