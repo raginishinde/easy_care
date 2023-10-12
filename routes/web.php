@@ -13,8 +13,8 @@ use App\Http\Controllers\AdminController;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+// Route::get('/', function () {
+//     return view('welcome');
+// });
 Route::get('/admin',[AdminController::class, 'admin']);
 Route::get('/dashboard',[AdminController::class, 'dashboard']);
